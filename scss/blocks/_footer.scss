@@ -1,0 +1,42 @@
+.footer {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    min-height: 44px;
+}
+.footer__copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer__copyright-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: $advantage-color;
+    display: flex;
+    align-items: center;
+}
+.footer__copyright-list {
+    display: flex;
+    flex-direction: row;
+}
+.footer__item-button {
+    margin: 10px 0;
+    padding: 0;
+    border: none;
+}
+.footer__item-ref {
+    width: 32px;
+    height: 32px;
+    background: rgba(0, 0, 0, 0.8);
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: white;
+    transition: all 0.5s ease 0s;
+}
+.footer__item-ref:hover,
+.footer__item-ref:focus {
+    background-color: white;
+    fill: black;
+}

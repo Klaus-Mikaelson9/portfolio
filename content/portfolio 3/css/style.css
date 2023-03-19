@@ -1,0 +1,562 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css?family=Jost:regular,500,700&display=swap");
+
+body {
+    font-family: Jost, sans-serif;
+    font-size: 1.125rem;
+    color: #fff;
+    background: transparent;
+}
+body.lock {
+    overflow: hidden;
+}
+a {
+    color: #fff;
+}
+[class*="__container"] {
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+
+/* ===================== HEADER ===================== */
+
+.header {
+    position: relative;
+}
+.header::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: clamp(67.188rem, 34.439rem + 33.16vw, 87.5rem);
+    width: 100%;
+    background-image: url('../img/image-3.png');
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__container {
+}
+.header__content {
+    padding: 55px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.header__logo {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 124%;
+}
+.header__navigation {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.header__nav {
+    
+}
+.header__list {
+    display: flex;
+    gap: 24px;
+}
+.list__item {
+}
+.list__link {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 124%;
+    transition: color .2s;
+}
+.list__link:hover {
+    color: #D6CEE1;
+}
+.header__socials {
+    display: flex;
+    gap: 20px;
+}
+.header__social {
+    height: 25px;
+    width: 25px;
+}
+.social ellipse,
+.social path {
+    transition: .2s;
+}
+.social:hover ellipse {
+    fill: #8754D9;
+}
+.social:hover path {
+    fill: #fff;
+}
+
+
+/* ===================== MAIN ===================== */
+
+.main {
+}
+.main__container {
+}
+.main__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1495px;
+    margin: 0 auto;
+}
+.main__info {
+
+}
+.info__title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 124%;
+    max-width: 549.95px;
+    margin-bottom: 14px;
+}
+.info__subtitle {
+    max-width: 559.95px;
+    font-size: 1.25rem;
+    line-height: 124%;
+    margin-bottom: 44px;
+}
+.info__buttons {
+}
+.info__btn {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    padding: 12px 36px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    transition: .2s;
+}
+.info__btn path {
+    transition: fill .2s;
+}
+.button__title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 124%;
+}
+.app-store {
+    margin-right: 21px;
+}
+.play-market {
+}
+.info__btn:hover {
+    background-color: #fff;
+    color: #A658DB;
+}
+.info__btn:hover path {
+    fill: #A658DB;
+}
+.main__img {
+    max-width: 645px;
+}
+
+/* ===================== MENU BUTTON ===================== */
+
+.menu__btn {
+    display: none;
+    width: 28px;
+    height: 19px;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+}
+.menu__btn span {
+    position: absolute;
+    top: calc(50% - 1.5px);
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #fff;
+    transition: all .2s;
+}
+.menu__btn::after,
+.menu__btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #fff;
+    transition: all .2s;
+}
+.menu__btn::after {
+    top: 0;
+}
+.menu__btn::before {
+    bottom: 0;
+}
+
+/* ===================== FUNCTIONAL ===================== */
+
+.functional {
+    margin: 210px 0px 400px 0px;
+    padding: 0px 20px;
+}
+.functional__content {
+}
+.functional__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 101px;
+}
+.functional__title {
+    font-weight: 500;
+    font-size: 2.875rem;
+    line-height: 66px;
+    color: #000;
+    margin-bottom: 24px;
+}
+.functional__subtitle {
+    font-size: 1.125rem;
+    line-height: 124%;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #ABABAB;
+    max-width: 424px;
+}
+.functional__body-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.functional__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1488px;
+    gap: 88px;
+}
+.functional__list {
+    
+}
+.functional__list__item {
+    max-width: 430px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    text-align: right;
+}
+.functional__list__item:not(:last-child) {
+    margin-bottom: 200px;
+}
+.functional__list__item.right {
+    flex-direction: row-reverse;
+    text-align: left;
+}
+.item__info {
+    
+}
+.item__title {
+    font-weight: 500;
+    font-size: 1.375rem;
+    line-height: 124%;
+    color: #000000;
+    margin-bottom: 12px;
+}
+.item__subtitle {
+    font-size: 1.125rem;
+    line-height: 124%;
+    max-width: 321px;
+    color: #B0B0B0;
+}
+.item__image {
+    padding: 28px;
+    background: linear-gradient(180deg, #8253D8 0%, #D05DDE 100%);
+    border-radius: 50%;
+    min-height: 90px;
+    min-width: 90px;
+}
+
+/* ===================== FOOTER ===================== */
+
+.footer {
+    position: relative;
+}
+.footer:before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+    height: clamp(32.625rem, 15.092rem + 17.76vw, 43.5rem);
+    width: 100%;
+    background-image: url('../img/image-4.png');
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer__container {
+}
+.footer__info-wrapper {
+    padding-bottom: 84px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 48px;
+}
+.footer__info {
+    display: flex;
+    gap: clamp(3.125rem, -22.566rem + 35.74vw, 13.625rem);
+}
+.info__title {
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 124%;
+}
+.footer__about {
+}
+.about__title {
+    margin-bottom: 14px;
+}
+.about__subtitle {
+    font-size: 1.125rem;
+    line-height: 124%;
+    max-width: 518px;
+}
+.footer__contacts {
+}
+.contacts__title {
+}
+.contacts__subtitle {
+}
+.footer__socials {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+}
+.socials__title {
+}
+.socials {
+}
+.social {
+}
+.footer__social {
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+.footer__social svg {
+    height: 100%;
+    width: 100%;
+}
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 124%;
+    padding-bottom: 40px;
+}
+
+/* ===================== MEDIA ===================== */
+
+@media (max-width: 1300px) {
+    .functional__body {
+        flex-direction: column;
+    }
+    .functional__list__item:not(:last-child) {
+        margin-bottom: 100px;
+    }
+    .functional__list__item {
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+}
+
+@media (max-width: 1155px) {
+    .app-store {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 935px) {
+    .footer:before {
+        height: 900px;
+    }
+    .footer__info {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .footer__info-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .footer__social {
+        width: 35px;
+        height: 35px;
+    }
+    .footer__socials {
+        gap: 6px;
+    }
+    .functional {
+        margin: 210px 0px 300px 0px;
+    }
+
+
+
+    .menu__btn.active {
+        position: fixed;
+        top: 68px;
+        right: 20px;
+    }
+    .menu__btn {
+        display: block;
+    }
+    .menu__btn.active span {
+        transform: scale(0);
+    }
+    .menu__btn.active::after,
+    .menu__btn.active::before {
+        top: calc(50% - 1px);
+    }
+    .menu__btn.active::after {
+        transform: rotate(-45deg);
+    }
+    .menu__btn.active::before {
+        transform: rotate(45deg);
+    }
+    .header__navigation {
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-color: #8253D8;
+        transition: .4s ease;
+        z-index: 2;
+    }
+    .header__navigation.active {
+        right: 0;
+    }
+    .header__list {
+        flex-direction: column;
+        text-align: center;
+    }
+    .list__link {
+        font-size: 2.5rem;
+    }
+    .header__social {
+        height: 60px;
+        width: 60px;
+    }
+    .header__social svg {
+        width: 100%;
+    }
+    .main__img {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .main__content {
+        flex-direction: column;
+    }
+    .app-store {
+        margin-bottom: 0;
+    }
+    .main__info {
+        text-align: center;
+    }
+    .info__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .info__btn {
+        height: 58px;
+    }
+    .main__img {
+        max-width: 75%;
+    }
+    .main__content {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 424.98px) {
+    .main__img {
+        max-width: 100%;
+    }
+    .info__buttons {
+        flex-direction: column;
+    }
+    .app-store {
+        margin-bottom: 16px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 374.98px) {
+    .header__logo {
+        font-size: 24px;
+    }
+    .header__content {
+        padding: 20px 0px;
+    }
+    .header {
+        margin-bottom: 36px;
+    }
+    .menu__btn.active {
+        top: 30px;
+        right: 20px;
+    }
+    .info__subtitle {
+        margin-bottom: 22px;
+    }
+    .play-market,
+    .app-store {
+        max-width: 200px;
+    }
+    .info__btn {
+        padding: 12px 36px;
+    }
+    .functional__info {
+        margin-bottom: 5px;
+    }
+    .functional__title {
+        font-size: 2.25rem;
+        margin-bottom: 8px;
+        line-height: normal;
+    }
+    .item__image {
+        padding: 14px;
+        min-height: 60px;
+        min-width: 60px;
+    }
+    .item__image img {
+        width: 100%;
+        height: 100%;
+    }
+    .functional__list__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    .functional__list__item {
+        gap: 13px;
+    }
+    .item__title {
+        font-size: 18px;
+    }
+    .item__subtitle {
+        font-size: 0.875rem;
+    }
+    .info__title {
+        font-size: 22px;
+    }
+    .about__subtitle,
+    .contacts__subtitle {
+        font-size: 0.875rem;
+    }
+    .footer__info-wrapper {
+        padding-bottom: 56px;
+        margin-bottom: 16px;
+    }
+}
